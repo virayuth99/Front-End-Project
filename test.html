@@ -1,0 +1,189 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular Line</title>
+    <style>
+        body {
+         
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .line-container {
+            position: relative;
+            width: 200px; /* Shorter line */
+            height: 2px; /* Line thickness */
+            background-color: rgb(205, 15, 15); /* Line color */
+        }
+
+        .line-container::before,
+        .line-container::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 30px; /* Triangle width */
+            height: 12px; /* Triangle height */
+            background-color: black; /* Match background to "cut" into the line */
+            clip-path: polygon(30% 70%, 100% 70%, 100% 100%, 0 100%);
+            transform: translateY(-50%);
+        }
+
+        .line-container::before {
+            left: 0; /* Position the left triangle */
+            transform: translateY(-50%) rotate(180deg); /* Rotate for left angle */
+        }
+
+        .line-container::after {
+            right: 0; /* Position the right triangle */
+        }
+    </style>
+</head>
+<body>
+    <div class="line-container"></div>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Underline Effect</title>
+    <style>
+        body {
+            background-color: black; /* For better contrast */
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .menu-category-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Center it vertically */
+        }
+
+        li {
+            list-style: none;
+            margin-left: 55px;
+        }
+
+        a {
+            position: relative;
+            text-decoration: none; /* Remove default underline */
+            color: white; /* Link text color */
+            font-size: 16px;
+            margin-right: 20px; /* Space between links */
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px; /* Position the underline */
+            left: 0;
+            width: 0; /* Start with no width */
+            height: 2px; /* Thickness of the underline */
+            background-color: gray; /* Color of the underline */
+            transition: width 0.3s ease; /* Smooth transition */
+        }
+
+        a:hover::after {
+            width: 100%; /* Expand the underline to full width */
+        }
+
+        a:hover {
+            color: lightgray; /* Optional: Slight color change on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-category-footer d-flex">
+        <li>
+            <a href="#">ABOUT COMPUTER</a>
+            <a href="#">HOME</a>
+            <a href="#">INFORMATION</a>
+            <a href="#">ACCESSIBILITY HELP</a>
+        </li>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Underline</title>
+    <style>
+        .menu-category-footer {
+            display: flex;
+        }
+
+        .menu-category-footer ul {
+            list-style: none;
+            margin-left: 55px;
+            padding: 0;
+        }
+
+        .menu-category-footer li {
+            margin: 5px 0; /* Add spacing between links */
+        }
+
+        .hover-underline {
+            position: relative;
+            display: inline-block;
+            text-decoration: none;
+            color: #000; /* Change color as needed */
+            transition: color 0.3s ease;
+        }
+
+        .hover-underline::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px; /* Adjust distance from the text */
+            width: 0;
+            height: 2px; /* Adjust thickness of the underline */
+            background-color: #000; /* Change underline color as needed */
+            transition: width 0.3s ease;
+        }
+
+        .hover-underline:hover {
+            color: #555; /* Change text color on hover */
+        }
+
+        .hover-underline:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-category-footer d-flex">
+        <ul>
+            <li>
+                <a href="" class="hover-underline">ABOUT COMPUTER</a>
+            </li>
+            <li>
+                <a href="" class="hover-underline">HOME</a>
+            </li>
+            <li>
+                <a href="" class="hover-underline">INFORMATION</a>
+            </li>
+            <li>
+                <a href="" class="hover-underline">ACCESSIBILITY HELP</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+
