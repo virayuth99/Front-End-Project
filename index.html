@@ -22,7 +22,7 @@
                         -webkit-text-fill-color: transparent;">ETEC</span><br>&emsp;Center</p>
                 </div>
             </div>
-            <div class="category1">
+            <div class="category1"> 
                 <nav>
                     <a href="#">Home</a>
                     <a href="#">Products</a>
@@ -39,8 +39,92 @@
                 </nav>
             </div>
         </header>
+        <!-- slider -->
+        <div class="slider-container">
+            <div class="slides">
+              <div class="slide">
+                <img src="./image/banner rog" alt="Slide 1">
+              </div>
+              <div class="slide">
+                <img src="./image/banner msi" alt="Slide 1">
+              </div>
+              <div class="slide">
+                <img src="./image/banner rog 1" alt="Slide 2">
+              </div>
+              <div class="slide">
+                <img src="./image/banner msi 1" alt="Slide 3">
+              </div>
+            </div>
+            <div class="controls">
+                <i class="bi bi-caret-left-fill control-icon" id="prev"></i>
+                <i class="bi bi-caret-right-fill control-icon" id="next"></i>
+            </div>
+            <div class="dots" id="dots"></div>
+        </div>
+        <!-- explore-our-products -->
+        <div class="explore-our-products">
+            <div class="top-description-products d-flex justify-content-center align-items-center">
+                <h1 class="fw-bold mt-5">EXPLORE OUR PRODUCTS</h1>
+            </div>
+            <div class="middle-products">
+                <div class="mid-product">
+                    <div class="image-mid-explore">
+                        <img src="./image/image explore products 1.png" alt="">
+                        <p>Laptops</p>
+                    </div>
+                </div>
+                <div class="mid-product">
+                    <div class="image-mid-explore">
+                        <img src="./image/image explore products 2" alt="">
+                        <p>Motherboards</p>
+                    </div>
+                </div>
+                <div class="mid-product">
+                    <div class="image-mid-explore">
+                        <img src="./image/image explore products 3" alt="">
+                        <p>Graphics Cards</p>
+                    </div>
+                </div>
+                <div class="mid-product">
+                    <div class="image-mid-explore">
+                        <img src="./image/image explore products 4" alt="">
+                        <p>Moniters</p>
+                    </div>
+                </div>
+                <div class="mid-product">
+                    <div class="image-mid-explore">
+                        <img src="./image/image explore products 5" alt="">
+                        <p>Desktops</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-button-products d-flex justify-content-center align-items-center">
+                <button class="px-4 py-2 brr ">VIEW MORE PRODUCTS &emsp13; <i class="bi bi-arrow-right"></i></button>
+            </div>
+        </div>
+        <!-- banner rog -->
+         <div class="banner-rog">
+            <img src="https://dlcdnwebimgs.asus.com/gain/FDFFE426-0A29-40D5-8E26-C838EB26CA8F" alt="">
+            <div class="box-text-rog">
+                <h3 style="font-weight: bold;">THE ART OF THE ROG UNIVERSE</h3>
+                <p>Technology never sleeps, nor should the action. For those keen on winning power, the Republic of Gamers awaits. Driven by relentless innovation, ROG is committed to producing out-of-this-world experiences for gamers and enthusiasts everywhere.</p>
+            </div>
+         </div>
+         <!-- my products -->
+          <div class="my-product-computer">
+            <div class="product-computer-in-store">
+                <div class="cart-product"></div>
+                <div class="cart-product"></div>
+                <div class="cart-product"></div>
+                <div class="cart-product"></div>
+                <div class="cart-product"></div>
+                <div class="cart-product"></div>
+                <div class="cart-product"></div>
+                <div class="cart-product"></div>
+            </div>
+          </div>
         <!-- footer -->
-         <footer>
+        <footer>
             <div class="top-info d-flex">
                 <div class="left">
                     <div class="menu-category-footer d-flex">
@@ -74,11 +158,85 @@
                     <div style="margin-right: 55px;" class="sign-up-email">
                         <h5 style="font-size: 13.5px; font-weight: 600; color: #e1e52a;" >GET THE LATEST DEALS AND MORE</h5>
                         <input style="background-color: black; border: 1px solid #e1e52a; outline: none; padding: 7px 50px 7px 15px; color: #e1e52a;" type="email" placeholder="Enter email address">
-                        <span><button style="padding: 7px 15px 7px 15px; outline: none; border: 1px solid #e1e52a; background-color: #e1e52a; color: #ffffff;">SIGN UP</button></span>
+                        <span><button id="button-sign-up" style="padding: 7px 15px 7px 15px; outline: none; border: 1px solid #e1e52a; background-color: #e1e52a; color: #ffffff;">SIGN UP</button></span>
                     </div>
                 </div>
+                <div class="line-container"></div>
             </div>
-         </footer>
+            <div class="bottom-info">
+                <div class="top d-flex justify-content-center">
+                    <div class="top-category-footer d-flex justify-content-center align-items-center">
+                        <div style="margin-right: 580px; color:#e1e52a; cursor: pointer;" class="language hover-bottom">
+                            <i style="font-size: 20px; padding-right: 5px;" class="bi bi-globe"></i>
+                            <span>Global/English</span>
+                        </div>
+                        <div class="privacy d-flex">
+                            <li>
+                                <a class="hover-underline-1" href="#">PRIVACY POLICY</a>
+                            </li>
+                            <li>
+                                <a class="hover-underline-1" href="#">TERMS OF USE NOTICE</a>
+                            </li>
+                            <li>
+                                <a style="text-decoration: none; color:#e1e52a;" href="#">©ETEC Center Computer Inc. All rights reserved.</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                  <div class="bottom-category-footer">
+                    <div id="community">
+                        <h5 style="margin-top: 20px;">Community</h5>
+                        <a href="#">Computer Reward Program</a>
+                        <a href="#">Member Center</a>
+                        <a href="#">ETEC Center Insider</a>
+                        <a href="#">Social Media</a>
+                        <a href="#">Forums</a>
+                        <a href="#">ESport Teams</a>
+                      </div>
+                      <div id="support">
+                        <h5 style="margin-top: 20px;">Support</h5>
+                        <a href="#">Downloads</a>
+                        <a href="#">Warranty Information</a>
+                        <a href="#">Product Registration</a>
+                        <a href="#">Online Customer Service</a>
+                        <a href="#">Service Location</a>
+                        <a href="#">Where To Buy</a>
+                      </div>
+                    <div id="resource">
+                      <h5 style="margin-top: 20px;">Resource</h5>
+                        <a href="#">Press Room</a>
+                        <a href="#">Awards</a>
+                        <a href="#">Videos</a>
+                        <a href="#">RSS</a>
+                        <a href="#">Customer Stories</a>
+                        <a href="#">Blogs</a>
+                    </div>
+                    <div id="more">
+                      <h5 style="margin-top: 20px;">More</h5>
+                        <a href="#">About Our Products</a>
+                        <a href="#">Brand Story</a>
+                        <a href="#">Innovation DNA</a>
+                        <a href="#">CSR</a>
+                        <a href="#">Investor Information</a>
+                        <a href="#">Contact Information</a>
+                    </div>
+                    <div id="company-information">
+                      <h5 style="margin-top: 20px;">Company Information </h5>
+                        <a href="#">Artificial Intelligence</a>
+                        <a href="#">Brochure</a>
+                        <a href="#">Wallpaper</a>
+                        <a href="#">PSU Calculator</a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 <script src="script.js"></script>
